@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css'; // @import 'assets/css/rellax.css';
+@import '../node_modules/@fortawesome/fontawesome-free/css/fontawesome.css';
+@import '../node_modules/@fortawesome/fontawesome-free/css/solid.css';
+@import '../node_modules/@fortawesome/fontawesome-free/css/brands.css';
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Gothic&display=swap');
+
+body{
+  scroll-behavior: smooth;
+  font-family: 'Nanum Gothic', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
+
+}
