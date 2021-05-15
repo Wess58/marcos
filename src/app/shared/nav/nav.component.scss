@@ -3,21 +3,25 @@
   padding: 10px 20px;
 
   .navbar-brand{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
+    color: #678b13;
+    letter-spacing: 2px;
   }
 
   a {
     color: #3c4043;
     font-weight: 600;
     font-size: 0.9rem;
+    border-bottom: 3px solid #fff;
+
   }
   a:hover{
     border-bottom: 3px solid #e1e1e1;
   }
 }
 
-.active-nav {
-  border-bottom: 3px solid #678b13!important;
-}
+// .active-nav {
+//   border-bottom: 3px solid #678b13!important;
+// }

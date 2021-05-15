@@ -92,7 +92,7 @@
     padding: 5vh 0;
     background-color: #fff;
     // background-color: #e1e1e1;
-    background-image: linear-gradient(135deg, rgba(0,0,0,0.0), #fff), url("../../assets/images/6.png");
+    background-image: linear-gradient(135deg, rgba(0,0,0,0.0), #fff), url("../../assets/images/dots.png");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -194,6 +194,12 @@
           height: 200px;
           width: 100%;
           object-fit: cover;
+          user-drag: none!important;
+          user-select: none!important;
+          -moz-user-select: none!important;
+          -webkit-user-drag: none!important;
+          -webkit-user-select: none!important;
+          -ms-user-select: none!important;
         }
       }
 
@@ -217,6 +223,88 @@
 
     .card:hover {
       margin-top: -5px;
+    }
+  }
+
+  .contact-section {
+    padding: 10vh 0;
+
+    .section-title {
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      color: #678b13;
+      margin-bottom: 5px;
+      text-align: center;
+      // span {
+      //   // font-size: 2.2rem;
+      //   color: #678b13;
+      //   // border-bottom: 5px solid #678b13;
+      //   padding-bottom: 5px;
+      // }
+    }
+
+    .section-description {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #80868b;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .content{
+      i{
+        font-size: 2rem;
+        color: #80868b;
+        margin-bottom: 20px;
+      }
+      a{
+        color: #678b13;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+
+    .form-bg{
+      // background-color: #678b13;
+      background-image: linear-gradient(135deg , #678b1399 30%, #b5fbc599);
+      border-radius: 20px;
+      margin: 5vh 0px;
+
+    }
+
+    .form{
+      padding: 7vh 0px;
+      input,select,textarea{
+        border: 2px solid #e1e1e1;
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 30px;
+        margin-bottom: 10px;
+        outline: none!important;
+        box-shadow: none!important;
+        color: #80868b;
+      }
+      select{
+        background-color: #fff;
+      }
+      textarea{
+        resize: none;
+      }
+      .btn-submit{
+        width: 100%;
+        text-align: center;
+        background-color: #f1f1f1;
+        border-radius: 30px;
+        padding: 10px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #80868b;
+      }
+
     }
   }
 }

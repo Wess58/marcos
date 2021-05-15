@@ -4,8 +4,7 @@
 @import '../node_modules/@fortawesome/fontawesome-free/css/solid.css';
 @import '../node_modules/@fortawesome/fontawesome-free/css/brands.css';
 @import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Gothic&display=swap');
-//
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Gothic&display=swap'); //
 // 4EAEB8 - medium green - 78, 174, 184
 // 678b13 - darker green - 103, 139, 19
 // b5fbc5 - faded lime green - 181, 251, 197
@@ -17,6 +16,21 @@ body {
   // font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
 }
-.container-fluid{
+
+.container-fluid {
   padding: 0;
 }
+
+* img::selection {
+  background-color: transparent!important;
+  user-drag: none!important;
+  user-select: none!important;
+  -moz-user-select: none!important;
+  -webkit-user-drag: none!important;
+  -webkit-user-select: none!important;
+  -ms-user-select: none!important;
+}
+// * ::-moz-selection,
+// * ::selection {
+//   background-color: #678b13!important;
+// }
