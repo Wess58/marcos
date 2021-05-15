@@ -5,10 +5,18 @@
 @import '../node_modules/@fortawesome/fontawesome-free/css/brands.css';
 @import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Gothic&display=swap');
+//
+// 4EAEB8 - medium green - 78, 174, 184
+// 678b13 - darker green - 103, 139, 19
+// b5fbc5 - faded lime green - 181, 251, 197
+//
 
-body{
+body {
   scroll-behavior: smooth;
   font-family: 'Nanum Gothic', sans-serif;
   // font-family: 'Montserrat', sans-serif;
-
+  letter-spacing: 1px;
+}
+.container-fluid{
+  padding: 0;
 }

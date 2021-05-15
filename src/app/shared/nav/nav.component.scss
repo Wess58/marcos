@@ -1,0 +1,23 @@
+.navbar {
+  background-color: #fff;
+  padding: 10px 20px;
+
+  .navbar-brand{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  a {
+    color: #3c4043;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  a:hover{
+    border-bottom: 3px solid #e1e1e1;
+  }
+}
+
+.active-nav {
+  border-bottom: 3px solid #678b13!important;
+}
