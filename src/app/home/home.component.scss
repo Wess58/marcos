@@ -254,18 +254,25 @@
     }
 
     .content {
-      i {
-        font-size: 2rem;
-        color: #80868b;
-        margin-bottom: 20px;
-      }
-
       a {
         color: #678b13;
         font-size: 0.9rem;
         font-weight: 600;
         text-decoration: none;
         cursor: pointer;
+
+        i {
+          font-size: 2.2rem;
+          color: #80868b;
+          margin-bottom: 20px;
+          border-radius: 50%;
+        }
+      }
+
+      a:hover {
+        i {
+          color: #678b13;
+        }
       }
     }
 
@@ -294,9 +301,8 @@
 
       select {
         background-color: #fff;
-        padding: 10px 20px!important;
+        padding: 10px 20px!important !important;
         overflow: hidden;
-
       }
 
       textarea {
