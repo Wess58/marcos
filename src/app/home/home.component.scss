@@ -92,7 +92,7 @@
     padding: 5vh 0;
     background-color: #fff;
     // background-color: #e1e1e1;
-    background-image: linear-gradient(135deg, rgba(0,0,0,0.0), #fff), url("../../assets/images/dots.png");
+    background-image: url("../../assets/images/dots.png");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -253,13 +253,14 @@
       margin-bottom: 50px;
     }
 
-    .content{
-      i{
+    .content {
+      i {
         font-size: 2rem;
         color: #80868b;
         margin-bottom: 20px;
       }
-      a{
+
+      a {
         color: #678b13;
         font-size: 0.9rem;
         font-weight: 600;
@@ -268,18 +269,20 @@
       }
     }
 
-    .form-bg{
+    .form-bg {
       // background-color: #678b13;
       background-image: linear-gradient(135deg , #678b1399 30%, #b5fbc599);
       border-radius: 20px;
-      margin: 5vh 0px;
-
+      margin: 5vh 0;
     }
 
-    .form{
-      padding: 7vh 0px;
-      input,select,textarea{
-        border: 2px solid #e1e1e1;
+    .form {
+      padding: 7vh 0;
+
+      input,
+      select,
+      textarea {
+        border: none;
         width: 100%;
         padding: 10px 20px;
         border-radius: 30px;
@@ -288,23 +291,71 @@
         box-shadow: none!important;
         color: #80868b;
       }
-      select{
+
+      select {
         background-color: #fff;
+        padding: 10px 20px!important;
+        overflow: hidden;
+
       }
-      textarea{
+
+      textarea {
         resize: none;
       }
-      .btn-submit{
+
+      .btn-submit {
         width: 100%;
         text-align: center;
-        background-color: #f1f1f1;
+        background-color: #e1e1e1;
         border-radius: 30px;
         padding: 10px;
         font-weight: 600;
         letter-spacing: 1px;
         color: #80868b;
       }
-
     }
+  }
+}
+@media (max-width:770px) {
+  .landing-section {
+    .ict-section,
+    .solar-section,
+    .water-section {
+      min-height: 80vh!important;
+    }
+
+    .content {
+      h1 {
+        font-size: 2.3rem!important;
+      }
+    }
+  }
+
+  .about-section {
+    .about-opening-title {
+      span {
+        font-size: 2.2rem!important;
+      }
+    }
+
+    .section-title {
+      letter-spacing: 1px!important;
+      margin-bottom: 20px!important;
+    }
+  }
+
+  .services-section {
+    .section-title {
+      letter-spacing: 1px!important;
+      margin-bottom: 20px!important;
+    }
+
+    .card {
+      margin: 20px 10px;
+    }
+  }
+
+  .contact-section {
+    .form {}
   }
 }
