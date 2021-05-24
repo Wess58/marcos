@@ -1,1 +1,131 @@
-<p>solar works!</p>
+<div class="container-fluid solar">
+
+  <div id="carouselImages" class="carousel slide landing-section" data-ride="carousel" data-interval="5000" data-wrap="true" data-pause="false">
+
+    <ol class="carousel-indicators">
+      <li data-target="#carouselImages" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselImages" data-slide-to="1"></li>
+    </ol>
+
+    <div class="content-box">
+      <h1>Go Solar <span>Today</span></h1>
+      <p>Save on your elecricity bills with our low maintenance <br class="d-none d-sm-none d-md-inline"> reliable solar solutions</p>
+      <!-- <button type="button" class="btn btn-main-cta">Get Started</button> -->
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="solar-section">
+          <div class="container">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="ict-section">
+          <div class="container">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+  </div>
+
+
+  <div class="container tabs-section p-0" align="center">
+    <div>
+      <button class="btn btn-tabs" [ngClass]="{'active-tab':tabCurrent === 'ELECTRICITY'}" (click)="switchContent('ELECTRICITY')"><span class="d-none d-sm-none d-md-inline">Solar</span> Elecricity</button>
+      <button class="btn btn-tabs" [ngClass]="{'active-tab':tabCurrent === 'WATER'}" (click)="switchContent('WATER')"><span class="d-none d-sm-none d-md-inline">Solar</span> Water Heating</button>
+    </div>
+  </div>
+
+  <div class="container content-section">
+
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p *ngIf="tabCurrent === 'ELECTRICITY'" class="description-title">If you’d like to save up to <strong>60%</strong> of your electricity bill, become independent of grid power or have a great backup system when grid fails, call us now on
+          <strong> <a href="tel:+254720503369" target="_blank">
+              +254 720 503 369</a></strong> to get a <strong>free</strong> site visit or a quote
+        </p>
+        <p *ngIf="tabCurrent === 'WATER'" class="description-title">Our water heating solutions help commercial, industrial and residential customers <strong>drastically reduce</strong> their electricity bill - often resulting in a payback in just
+          one or two years. We offer both <strong>Evacuated</strong> glass tube technology (ETC) and <strong>Copper</strong>
+          flat plate technology (FPC).</p>
+      </div>
+    </div>
+
+
+    <!-- ELECTRICITY SECTION -->
+    <div [hidden]="tabCurrent === 'WATER'">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="solution-image">
+              <img src="assets/images/solar-comm.png" alt="">
+            </div>
+            <div class="content">
+              <h4>Commercial / Industrial Solution</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="solution-image">
+              <img src="assets/images/solar-residential.jpg" alt="">
+            </div>
+            <div class="content">
+              <h4>Residential Solution</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="solution-image">
+              <img src="assets/images/agri_bizz.jpg" alt="">
+            </div>
+            <div class="content">
+              <h4>Agribusiness Solution</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- WATER HEATING SECTION -->
+
+    <div [hidden]="tabCurrent === 'ELECTRICITY'">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <div class="card">
+            <div class="solution-image">
+              <img src="assets/images/solar-water-comm.jpg" alt="">
+            </div>
+            <div class="content">
+              <h4>Commercial / Industrial Solution</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card">
+            <div class="solution-image">
+              <img src="assets/images/solar-water-residential.jpeg" alt="">
+            </div>
+            <div class="content">
+              <h4>Residential Solution</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </div>
+
+</div>

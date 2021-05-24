@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SolarComponent implements OnInit {
 
+  tabCurrent: any = 'ELECTRICITY';
   constructor() { }
 
   ngOnInit(): void {
+    // window.scroll(0, 0);
+
   }
+
+  switchContent(tab: any): void {
+    this.tabCurrent = tab;
+  }
+
 
 }

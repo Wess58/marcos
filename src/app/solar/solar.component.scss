@@ -1,0 +1,186 @@
+.solar {
+  .landing-section {
+    .content-box {
+      // padding-top: 20vh;
+      position: absolute;
+      top: 36vh;
+      left: 15%;
+      z-index: 10;
+
+      h1 {
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        color: #f1f1f1;
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+
+        span {
+          color: #b5fbc5;
+        }
+      }
+
+      p {
+        color: #f1f1f1;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+        padding-left: 5px;
+      }
+
+      .btn-main-cta {
+        border-radius: 50px;
+        border: 2px solid #b5fbc5;
+        color: #b5fbc5;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 6px 20px;
+        min-width: 200px;
+        background-color: transparent;
+        transition: all 0.2s ease;
+        margin-bottom: 50px;
+        // background-image: linear-gradient(to right , #b5fbc5, #124843);
+      }
+
+      .btn-main-cta:hover {
+        background-color: #b5fbc5;
+        color: #3c4043;
+      }
+    }
+
+    .solar-section {
+      background-color: #e1e1e1;
+      background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 25%, transparent), url("../../assets/images/solar-section-bg.jpg");
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      // background-attachment: fixed;
+      will-change: transform;
+      min-height: 75vh;
+    }
+
+    .ict-section {
+      background-color: #e1e1e1;
+      background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 25%, transparent), url("../../assets/images/solar-water-heaters.jpg");
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: top center;
+      // background-attachment: fixed;
+      will-change: transform;
+      min-height: 75vh;
+    }
+  }
+
+  .tabs-section {
+    margin: 7vh auto;
+    // border-bottom: 2px solid #e1e1e1;
+    .btn-tabs {
+      background-color: #f1f1f177;
+      width: 250px;
+      padding: 10px 12px;
+      border-radius: 0;
+      transition: all 0.5s ease;
+      cursor: pointer;
+      font-weight: 600;
+      color: #80868b;
+      margin: 0 2px;
+      letter-spacing: 1px;
+    }
+
+    .btn-tabs:hover {
+      background-color: #e1e1e1;
+    }
+  }
+
+  .content-section {
+    margin-bottom: 10vh;
+
+    .description-title {
+      text-align: center;
+      font-weight: 600;
+      color: #80868b;
+      margin-bottom: 7vh;
+
+      strong {
+        color: #678b13;
+        white-space: nowrap;
+
+        a {
+          color: #678b13;
+          text-decoration: none;
+          border-bottom: 1px solid #fff;
+          padding-bottom: 2px;
+        }
+
+        a:hover {
+          border-bottom: 1px solid #678b13;
+        }
+      }
+    }
+
+    .card {
+      // border: none!important;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.2s ease;
+      margin-bottom: 30px;
+
+      .solution-image {
+        img {
+          height: 200px;
+          width: 100%;
+          object-fit: cover;
+          user-drag: none!important;
+          user-select: none!important;
+          -moz-user-select: none!important;
+          -webkit-user-drag: none!important;
+          -webkit-user-select: none!important;
+          -ms-user-select: none!important;
+        }
+      }
+
+      .content {
+        padding: 20px;
+
+        h4 {
+          font-weight: 600;
+          color: #5f6063;
+          font-size: 1.1rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.active-tab {
+  background-color: #678b13!important;
+  color: #fff!important;
+  transition: all 0.2s ease!important;
+}
+@media (max-width:770px) {
+  .tabs-section {
+
+    .btn-tabs {
+      width: 42%!important;
+      padding: 10px 0px!important;
+    }
+  }
+
+  .content-box {
+    // padding-top: 20vh;
+    position: absolute;
+    top: 25vh!important;
+    left: 5%!important;
+    z-index: 10;
+
+    p {
+      width: 80%;
+    }
+  }
+}

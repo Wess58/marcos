@@ -30,6 +30,11 @@ body {
   -webkit-user-select: none!important;
   -ms-user-select: none!important;
 }
+* a,
+* button{
+  outline: none!important;
+  box-shadow: none!important;
+}
 // * ::-moz-selection,
 // * ::selection {
 //   background-color: #678b13!important;
