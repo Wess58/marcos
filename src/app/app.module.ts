@@ -10,6 +10,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './about/about.component';
 import { SolarComponent } from './solar/solar.component';
+import { LocationStrategy, Location, PathLocationStrategy } from '@angular/common';
+
 
 
 
@@ -29,7 +31,9 @@ import { SolarComponent } from './solar/solar.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    Location, { provide: LocationStrategy, useClass: PathLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
