@@ -32,7 +32,7 @@ import { LocationStrategy, Location, PathLocationStrategy } from '@angular/commo
     ReactiveFormsModule
   ],
   providers: [
-    Location, { provide: LocationStrategy, useClass: PathLocationStrategy }
+    // Location, { provide: LocationStrategy, useClass: PathLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })
