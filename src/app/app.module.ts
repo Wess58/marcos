@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './about/about.component';
 import { SolarComponent } from './solar/solar.component';
 import { LocationStrategy, Location, PathLocationStrategy } from '@angular/common';
+import { IctDetailComponent } from './ict-detail/ict-detail.component';
 
 
 
@@ -22,7 +23,8 @@ import { LocationStrategy, Location, PathLocationStrategy } from '@angular/commo
     NavComponent,
     FooterComponent,
     AboutComponent,
-    SolarComponent
+    SolarComponent,
+    IctDetailComponent
   ],
   imports: [
     BrowserModule,
