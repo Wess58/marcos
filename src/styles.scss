@@ -39,3 +39,9 @@ body {
 // * ::selection {
 //   background-color: #678b13!important;
 // }
+
+@media (max-width:770px) {
+  body{
+    overflow-x: hidden!important;
+  }
+}

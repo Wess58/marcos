@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+
+  opened: Boolean = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -19,6 +21,11 @@ export class NavComponent implements OnInit {
   openDropdown(): void {
     const menu = document.getElementById('dropdown-menu') as HTMLElement;
     menu.style.display = "block";
+  }
+
+  toggleSideNav(): void {
+    this.opened = !this.opened;
+    console.log(this.opened);
   }
 
 }

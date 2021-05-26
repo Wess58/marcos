@@ -18,9 +18,7 @@
         <a class="nav-link" [routerLink]="'/company'" >Company</a>
       </li> -->
 
-      <li class="nav-item mx-3">
-        <a class="nav-link" data-scroll href="#contact">Contact</a>
-      </li>
+
       <li class="nav-item dropdown" (mouseover)="openDropdown()" (mouseout)="closeDropdown()">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button">
           Services
@@ -48,10 +46,45 @@
           </a>
         </div>
       </li>
+      <li class="nav-item mx-3">
+        <a class="nav-link" data-scroll href="#contact">Contact</a>
+      </li>
     </ul>
     <!-- <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form> -->
   </div>
+
+  <div class="d-inline menu">
+    <span><i class="fas" [ngClass]="{'fa-times':opened, 'fa-bars':!opened}" (click)="toggleSideNav()"></i></span>
+  </div>
 </nav>
+
+
+<div class="sm-navbar" [ngClass]="{'slide-in':opened, 'slide-out':!opened}">
+  <div class="bg-color">
+
+    <ul class="main-list">
+      <li class="item" [routerLink]="'/'" (click)="toggleSideNav()">Home</li>
+      <li class="item">Services <span><i class="fas fa-caret-down"></i></span>
+        <ul class="sub-list">
+          <li class="sub-item" [routerLink]="'/solar-solutions'" (click)="toggleSideNav()">Solar Energy</li>
+          <li class="sub-item" [routerLink]="'/ict-solutions'" (click)="toggleSideNav()">ICT</li>
+          <li class="sub-item" (click)="toggleSideNav()">Water Purification</li>
+        </ul>
+      </li>
+      <li class="item">
+        Contact
+        <ul class="sub-list">
+          <li class="sub-item">
+            <a href="tel:+254720503369" target="_blank">
+              +254 720 503 369
+            </a>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+</div>
