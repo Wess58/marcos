@@ -11,7 +11,7 @@
         font-weight: 600;
         font-family: 'Montserrat', sans-serif;
         color: #f1f1f1;
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin-bottom: 30px;
 
         span {
@@ -108,7 +108,7 @@
 
       strong {
         color: #678b13;
-        white-space: nowrap;
+        // white-space: nowrap;
 
         a {
           color: #678b13;
@@ -167,8 +167,15 @@
   .tabs-section {
 
     .btn-tabs {
-      width: 42%!important;
       padding: 10px 0px!important;
+    }
+    .btn-tabs:first-child{
+      width: 60%!important;
+
+    }
+    .btn-tabs:last-child{
+      width: 32%!important;
+
     }
   }
 

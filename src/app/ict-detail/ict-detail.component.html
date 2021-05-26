@@ -1,0 +1,143 @@
+<div class="container-fluid solar">
+
+  <div id="carouselImages" class="carousel slide landing-section" data-ride="carousel" data-interval="5000" data-wrap="true" data-pause="false">
+
+    <ol class="carousel-indicators">
+      <li data-target="#carouselImages" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselImages" data-slide-to="1"></li>
+    </ol>
+
+    <div class="content-box">
+      <h1>Get <span>professional</span>, <span>competent </span> <br class="d-none d-sm-none d-md-inline"> and
+        <span>quality</span> services
+      </h1>
+      <!-- <p>Save on your elecricity bills with our low maintenance <br class="d-none d-sm-none d-md-inline"> reliable solar solutions</p> -->
+      <!-- <button type="button" class="btn btn-main-cta">Get Started</button> -->
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="solar-section">
+          <div class="container">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="ict-section">
+          <div class="container">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+  </div>
+
+
+  <div class="container tabs-section p-0" align="center">
+    <div>
+      <button class="btn btn-tabs" [ngClass]="{'active-tab':tabCurrent === 'TELECOMM'}" (click)="switchContent('TELECOMM')">Telecommunications</button>
+      <button class="btn btn-tabs" [ngClass]="{'active-tab':tabCurrent === 'ICT'}" (click)="switchContent('ICT')">ICT</button>
+    </div>
+  </div>
+
+  <div class="container content-section">
+
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p *ngIf="tabCurrent === 'TELECOMM'" class="description-title">
+          As a communication technologies solution provider our objective is to provide <strong>communication
+            network solutions</strong> for mobile service operators, fixed network operators, regulators, broadcasting houses, internet service providers (ISPs), Governments
+          and large business organisations in Africa.
+
+        </p>
+        <p *ngIf="tabCurrent === 'ICT'" class="description-title">
+          Explore our online and digital solutions that help businesses grow. We will help you get online <strong>quickly</strong> and <strong>affordably</strong> to provide you with the edge that your business needs to succeed
+        </p>
+      </div>
+    </div>
+
+
+    <!-- ELECTRICITY SECTION -->
+    <div [hidden]="tabCurrent === 'ICT'">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="solution-image">
+              <img src="assets/images/solar-comm.png" alt="">
+            </div>
+            <div class="content">
+              <h4>Telecommunication Network Planning & Design and installation</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="solution-image">
+              <img src="assets/images/solar-residential.jpg" alt="">
+            </div>
+            <div class="content">
+              <h4>Network managed services</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="solution-image">
+              <img src="assets/images/agri_bizz.jpg" alt="">
+            </div>
+            <div class="content">
+              <h4>Network solutions</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- WATER HEATING SECTION -->
+
+    <div [hidden]="tabCurrent === 'TELECOMM'">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="solution-image">
+              <img src="assets/images/solar-water-comm.jpg" alt="">
+            </div>
+            <div class="content">
+              <h4>Computer networking</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="solution-image">
+              <img src="assets/images/solar-water-residential.jpeg" alt="">
+            </div>
+            <div class="content">
+              <h4>Web design </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="solution-image">
+              <img src="assets/images/solar-water-residential.jpeg" alt="">
+            </div>
+            <div class="content">
+              <h4>CCTV and access system control</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
