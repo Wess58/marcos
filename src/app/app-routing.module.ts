@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
 import { SolarComponent } from "./solar/solar.component";
-
+import { IctDetailComponent } from "./ict-detail/ict-detail.component";
 
 
 
@@ -21,6 +21,10 @@ const routes: Routes = [
     component: SolarComponent
   },
   {
+    path: 'ict-solutions',
+    component: IctDetailComponent
+  },
+  {
     path: '**', component: HomeComponent
   },
   {
@@ -30,7 +34,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    scrollPositionRestoration: 'top',useHash: true 
+    scrollPositionRestoration: 'top',useHash: true
   }
   )],
   exports: [RouterModule]
