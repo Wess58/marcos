@@ -12,4 +12,13 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  closeDropdown(): void {
+    const menu = document.getElementById('dropdown-menu') as HTMLElement;
+    menu.style.display = "none";
+  }
+  openDropdown(): void {
+    const menu = document.getElementById('dropdown-menu') as HTMLElement;
+    menu.style.display = "block";
+  }
+
 }

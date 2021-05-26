@@ -1,15 +1,18 @@
 .navbar {
   background-color: #fff;
-  padding: 0px 20px;
+  padding: 0 20px;
   border-bottom: 2px solid #e1e1e1;
 
-  .navbar-brand{
+  .navbar-brand {
     font-size: 1.6rem;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     color: #678b13;
     letter-spacing: 2px;
-    img{
+    outline: none!important;
+    box-shadow: none!important;
+
+    img {
       width: 70px;
     }
   }
@@ -19,27 +22,69 @@
     font-weight: 600;
     font-size: 0.9rem;
     border-bottom: 3px solid #fff;
-
   }
-  a:hover{
+
+  a:hover {
     border-bottom: 3px solid #e1e1e1;
   }
-}
 
+  .dropdown {
+
+    .dropdown-toggle{
+      border-bottom: 3px solid #fff!important;
+
+    }
+
+    .dropdown-menu {
+      // display: block;
+      margin-top: -5px;
+      padding: 20px;
+      width:400px;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+      .dropdown-item{
+          white-space: normal;
+          margin-bottom: 5px;
+          border: none!important;
+          transition: all 50ms ease;
+          padding: 12px;
+
+
+          .title{
+            font-weight: 600;
+            color: #678b13;
+            font-size: 1.1rem;
+          }
+          .description{
+            font-weight: 600;
+            font-size: 14px;
+            color: #80868b;
+          }
+
+      }
+      .dropdown-item:hover{
+            background-color: #f9fafb;
+            border: none!important;
+            border-radius: 8px;
+      }
+    }
+
+  }
+}
 // .active-nav {
 //   border-bottom: 3px solid #678b13!important;
 // }
-
-
 @media (max-width:770px) {
-
-  .navbar-brand{
+  .navbar-brand {
     font-size: 1.6rem;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     color: #678b13;
     letter-spacing: 2px;
-    img{
+
+    img {
       width: 70px!important;
     }
   }
