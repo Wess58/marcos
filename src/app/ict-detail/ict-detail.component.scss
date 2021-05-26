@@ -47,9 +47,9 @@
       }
     }
 
-    .solar-section {
+    .networking-section {
       background-color: #e1e1e1;
-      background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 25%, transparent), url("../../assets/images/solar-section-bg.jpg");
+      background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 25%, transparent), url("../../assets/images/networking.jpg");
       background-repeat: no-repeat;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -61,15 +61,28 @@
       min-height: 75vh;
     }
 
-    .ict-section {
+    .satelite-section {
       background-color: #e1e1e1;
-      background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 25%, transparent), url("../../assets/images/solar-water-heaters.jpg");
+      background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 25%, transparent), url("../../assets/images/satelite.jpg");
       background-repeat: no-repeat;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-      background-position: top center;
+      background-position: center;
+      // background-attachment: fixed;
+      will-change: transform;
+      min-height: 75vh;
+    }
+    .server-section {
+      background-color: #e1e1e1;
+      background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 25%, transparent), url("../../assets/images/server-room.jpg");
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: center;
       // background-attachment: fixed;
       will-change: transform;
       min-height: 75vh;
@@ -141,6 +154,7 @@
           -webkit-user-drag: none!important;
           -webkit-user-select: none!important;
           -ms-user-select: none!important;
+          border-bottom: 1px solid #f1f1f1;
         }
       }
 
@@ -151,7 +165,11 @@
           font-weight: 600;
           color: #5f6063;
           font-size: 1.1rem;
-          margin-bottom: 0;
+          margin-bottom: 10px;
+        }
+        p{
+          font-size: 14px;
+          color: #80868b;
         }
       }
     }
