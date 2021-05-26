@@ -56,14 +56,14 @@
     </form> -->
   </div>
 
-  <div class="d-inline menu">
+  <div class="menu">
     <span><i class="fas" [ngClass]="{'fa-times':opened, 'fa-bars':!opened}" (click)="toggleSideNav()"></i></span>
   </div>
 </nav>
 
 
-<div class="sm-navbar" [ngClass]="{'slide-in':opened, 'slide-out':!opened}">
-  <div class="bg-color">
+<div class="sm-navbar"  [ngClass]="{'slide-in':opened, 'slide-out':!opened}">
+  <div class="bg-color" *ngIf="opened">
 
     <ul class="main-list">
       <li class="item" [routerLink]="'/'" (click)="toggleSideNav()">Home</li>

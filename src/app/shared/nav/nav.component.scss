@@ -71,6 +71,7 @@
   }
 
   .menu {
+    display: none;
     i {
       font-size: 2rem;
       color: #5f6063;
@@ -79,7 +80,6 @@
 }
 
 .sm-navbar {
-  display: none;
   position: fixed;
   top: 80px;
   width: 100%;
@@ -140,16 +140,16 @@
 .slide-in {
   // -webkit-transform: translate3d( 0,0,0);
   // transform: translate3d(0,0,0);
-  display: block!important;
+  display: block;
   opacity: 1;
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
 }
 
 .slide-out {
   opacity: 0;
   // -webkit-transform: translate3d(0, 0,0);
   // transform: translate3d(100%, 0,0);
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
 }
 // .active-nav {
 //   border-bottom: 3px solid #678b13!important;
@@ -166,4 +166,8 @@
       width: 70px!important;
     }
   }
+
+    .menu {
+      display: inline!important;
+    }
 }
