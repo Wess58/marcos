@@ -36,7 +36,7 @@ export class WaterDetailComponent implements OnInit {
       this.filterDisplayName = 'Accessories';
     }
     if (option === 'units') {
-      this.filterDisplayName = 'RO Unit';
+      this.filterDisplayName = 'RO Units';
     }
     if (option === 'other') {
       this.filterDisplayName = 'Filters & Pumps';
