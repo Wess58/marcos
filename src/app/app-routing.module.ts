@@ -4,6 +4,8 @@ import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
 import { SolarComponent } from "./solar/solar.component";
 import { IctDetailComponent } from "./ict-detail/ict-detail.component";
+import { WaterDetailComponent } from "./water-detail/water-detail.component";
+
 
 
 
@@ -25,6 +27,10 @@ const routes: Routes = [
     component: IctDetailComponent
   },
   {
+    path: 'water-solutions',
+    component: WaterDetailComponent
+  },
+  {
     path: '**', component: HomeComponent
   },
   {
@@ -34,7 +40,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    scrollPositionRestoration: 'top',useHash: true, anchorScrolling: 'enabled'
+    scrollPositionRestoration: 'top', useHash: true, anchorScrolling: 'enabled'
   }
   )],
   exports: [RouterModule]

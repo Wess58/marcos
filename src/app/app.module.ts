@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { SolarComponent } from './solar/solar.component';
 import { LocationStrategy, Location, PathLocationStrategy } from '@angular/common';
 import { IctDetailComponent } from './ict-detail/ict-detail.component';
+import { WaterDetailComponent } from './water-detail/water-detail.component';
 
 
 
@@ -24,7 +25,8 @@ import { IctDetailComponent } from './ict-detail/ict-detail.component';
     FooterComponent,
     AboutComponent,
     SolarComponent,
-    IctDetailComponent
+    IctDetailComponent,
+    WaterDetailComponent
   ],
   imports: [
     BrowserModule,

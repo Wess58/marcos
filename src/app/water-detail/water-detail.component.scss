@@ -1,0 +1,210 @@
+.water {
+  .landing-section {
+    .content-box {
+      // padding-top: 20vh;
+      position: absolute;
+      top: 36vh;
+      left: 15%;
+      z-index: 10;
+
+      h1 {
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        color: #f1f1f1;
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+
+        span {
+          color: #b5fbc5;
+        }
+      }
+
+      p {
+        color: #f1f1f1;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+        padding-left: 5px;
+      }
+
+      .btn-main-cta {
+        border-radius: 50px;
+        border: 2px solid #b5fbc5;
+        color: #b5fbc5;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 6px 20px;
+        min-width: 200px;
+        background-color: transparent;
+        transition: all 0.2s ease;
+        margin-bottom: 50px;
+        // background-image: linear-gradient(to right , #b5fbc5, #124843);
+      }
+
+      .btn-main-cta:hover {
+        background-color: #b5fbc5;
+        color: #3c4043;
+      }
+    }
+
+    .water-section {
+      background-color: #e1e1e1;
+      background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 25%, transparent), url("../../assets/images/water.jpg");
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      // background-attachment: fixed;
+      will-change: transform;
+      min-height: 75vh;
+    }
+  }
+
+  .content-section {
+    margin-bottom: 10vh;
+
+    .filter-section {
+      margin-bottom: 7vh;
+
+      .title {
+        color: #5f6063;
+        font-weight: 600;
+      }
+
+      .btn {
+        width: 220px;
+        background-color: #678b13;
+        border-radius: 2px;
+        position: relative;
+        text-align: left;
+        font-weight: 600;
+        letter-spacing: 1px;
+
+        i {
+          position: absolute;
+          right: 10px;
+        }
+      }
+
+      .dropdown-menu {
+        width: 220px;
+        padding: 0;
+
+        .dropdown-item {
+          cursor: pointer;
+          padding: 10px;
+        }
+
+        .dropdown-item:hover {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+
+    .description-title {
+      text-align: center;
+      font-weight: 600;
+      color: #80868b;
+      margin: 5vh 0;
+
+      strong {
+        color: #678b13;
+        white-space: nowrap;
+
+        a {
+          color: #678b13;
+          text-decoration: none;
+          border-bottom: 1px solid #fff;
+          padding-bottom: 2px;
+        }
+
+        a:hover {
+          border-bottom: 1px solid #678b13;
+        }
+      }
+    }
+
+    .section-title {
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      color: #678b13;
+      margin-bottom: 20px;
+      text-align: center;
+
+      span {
+        // font-size: 2.2rem;
+        color: #678b13;
+        // border-bottom: 5px solid #678b13;
+        padding-bottom: 5px;
+      }
+    }
+
+    .card {
+      // border: none!important;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.2s ease;
+      margin-bottom: 30px;
+
+      .product-image {
+        text-align: center;
+        border-bottom: 1px solid #e1e1e1;
+
+        img {
+          height: 250px;
+          width: auto;
+          object-fit: cover;
+          user-drag: none!important;
+          user-select: none!important;
+          -moz-user-select: none!important;
+          -webkit-user-drag: none!important;
+          -webkit-user-select: none!important;
+          -ms-user-select: none!important;
+        }
+      }
+
+      h5 {
+        font-weight: 600;
+        color: #5f6063;
+        font-size: 1.1rem;
+        margin: 20px 10px;
+      }
+    }
+  }
+}
+@media (max-width:770px) {
+  .landing-section {
+    .water-section {
+      min-height: 80vh!important;
+    }
+
+    .content-box {
+      // padding-top: 20vh;
+      position: absolute;
+      top: 25vh!important;
+      left: 5%!important;
+      z-index: 10;
+
+      h1 {
+        font-size: 2.5rem!important;
+        width: 94%;
+      }
+    }
+  }
+
+  .filter-section {
+    .btn {
+      margin-top: 10px;
+      width: 80%!important;
+      text-align: center!important;
+    }
+
+    .dropdown-menu {
+      width: 100%!important;
+    }
+  }
+}

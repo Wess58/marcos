@@ -1,0 +1,187 @@
+<div class="container-fluid water">
+  <div id="carouselImages" class="carousel slide landing-section" data-ride="carousel" data-interval="5000" data-wrap="true" data-pause="false" [@fadeIn]>
+
+    <!-- <ol class="carousel-indicators">
+      <li data-target="#carouselImages" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselImages" data-slide-to="1"></li>
+    </ol> -->
+
+    <div class="content-box">
+      <h1>Remove contaminants for <br class="d-none d-sm-none d-md-inline"> <span>healthier, </span> <span>impurity-free</span> water.</h1>
+      <!-- <p>Save on your elecricity bills with our low maintenance <br class="d-none d-sm-none d-md-inline"> reliable solar solutions</p> -->
+      <!-- <button type="button" class="btn btn-main-cta">Get Started</button> -->
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="water-section">
+          <div class="container">
+          </div>
+        </div>
+      </div>
+      <!-- <div class="carousel-item">
+        <div class="ict-section">
+          <div class="container">
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+  </div>
+
+  <div class="container content-section">
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p class="description-title">
+          There are water filters and we believe in something simple. Drinking more water makes you feel good and helps keep you healthy. It’s why our KEN RO give you much more than you might expect from a water filter.
+          <br><br>
+          Purified Water is one of the most essential elements to good health. It is necessary for the digestion and absorption of food; helps maintain proper muscle tone; supplies oxygen and nutrients to the cells; rids the body of wastes; and
+          serves as
+          a natural air conditioning system. Health officials emphasize the importance of drinking at least eight glasses of clean water each and every day to maintain good health.
+        </p>
+      </div>
+    </div>
+
+    <h3 class="section-title">Our Products</h3>
+
+
+
+    <div class="filter-section" align="center">
+      <span class="d-inline title">Product Categories <span class="d-none d-sm-none d-md-inline">: </span> </span>
+      <br class="d-block d-sm-block d-md-none">
+      <div class="dropdown d-inline">
+        <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{filterDisplayName}}
+
+          <span><i class="fas fa-sort-down"></i></span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" (click)="filterOptions('all')">All</a>
+          <a class="dropdown-item" (click)="filterOptions('accessories')">Accessories</a>
+          <a class="dropdown-item" (click)="filterOptions('units')">RO Unit</a>
+          <a class="dropdown-item" (click)="filterOptions('other')">Filters & Pumps</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="products-section">
+      <div class="row">
+
+        <div class="col-md-4" *ngIf="filter === 'all' || filter === 'other'">
+          <div class="card">
+            <div class="product-image">
+              <img src="assets/images/product4.png" alt="">
+            </div>
+            <h5>Procon Rotary Vane Pump</h5>
+          </div>
+        </div>
+
+        <div class="col-md-4" *ngIf="filter === 'all' || filter === 'other'">
+          <div class="card">
+            <div class="product-image">
+              <img src="assets/images/product3.png" alt="">
+            </div>
+            <h5>Domestic RO Membranes</h5>
+          </div>
+        </div>
+
+        <div class="col-md-4" *ngIf="filter === 'all' || filter === 'accessories'">
+          <div class="card">
+            <div class="product-image">
+              <img src="assets/images/product2.png" alt="">
+            </div>
+            <h5>Solenoid Valve</h5>
+          </div>
+        </div>
+
+        <div class="col-md-4" *ngIf="filter === 'all' || filter === 'units'">
+          <div class="card">
+            <div class="product-image">
+              <img src="assets/images/product5.png" alt="">
+            </div>
+            <h5>Ken Ro. Simba</h5>
+          </div>
+        </div>
+
+        <div class="col-md-4" *ngIf="filter === 'all' || filter === 'accessories'">
+          <div class="card">
+            <div class="product-image">
+              <img src="assets/images/product1.png" alt="">
+            </div>
+            <h5>Victaulic Coupling</h5>
+          </div>
+        </div>
+
+
+        <div class="col-md-4" *ngIf="filter === 'all' || filter === 'units'">
+          <div class="card">
+            <div class="product-image">
+              <img src="assets/images/product6.png" alt="">
+            </div>
+            <h5>Ken Ro. Simba II</h5>
+          </div>
+        </div>
+
+
+        <div class="col-md-4" *ngIf="filter === 'all' || filter === 'units'">
+          <div class="card">
+            <div class="product-image">
+              <img src="assets/images/product7.png" alt="">
+            </div>
+            <h5>Ken Ro. Simba II</h5>
+          </div>
+        </div>
+
+
+        <div class="col-md-4" *ngIf="filter === 'all' || filter === 'units'">
+          <div class="card">
+            <div class="product-image">
+              <img src="assets/images/product8.png" alt="">
+            </div>
+            <h5>Ken Ro. Nyati 500</h5>
+          </div>
+        </div>
+
+        <div class="col-md-4" *ngIf="filter === 'all' || filter === 'units'">
+          <div class="card">
+            <div class="product-image">
+              <img src="assets/images/product9.png" alt="">
+            </div>
+            <h5>Ken Ro. Nyati 1000</h5>
+          </div>
+        </div>
+
+
+        <div class="col-md-4" *ngIf="filter === 'all' || filter === 'units'">
+          <div class="card">
+            <div class="product-image">
+              <img src="assets/images/product10.png" alt="">
+            </div>
+            <h5>Ken Ro. Chui II</h5>
+          </div>
+        </div>
+
+        <div class="col-md-4" *ngIf="filter === 'all' || filter === 'accessories'">
+          <div class="card">
+            <div class="product-image">
+              <img src="assets/images/product11.jpg" alt="">
+            </div>
+            <h5>Antiscalant Liquid</h5>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+</div>

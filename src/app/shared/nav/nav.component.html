@@ -32,13 +32,13 @@
             </span>
           </a>
           <a class="dropdown-item" [routerLink]="'/ict-solutions'" (click)="closeDropdown()">
-            <span class="d-block title">ICT</span>
+            <span class="d-block title">Telecommunications & ICT</span>
             <span class="description">
               Experience work efficiency with our tech solutions that meet
               and sustain your business model
             </span>
           </a>
-          <a class="dropdown-item" (click)="closeDropdown()">
+          <a class="dropdown-item" (click)="closeDropdown()" [routerLink]="'/water-solutions'">
             <span class="d-block title">Water Purification</span>
             <span class="description">
               Get absolute protection against water borne bacteria and viruses
@@ -62,7 +62,7 @@
 </nav>
 
 
-<div class="sm-navbar"  [ngClass]="{'slide-in':opened, 'slide-out':!opened}">
+<div class="sm-navbar" [ngClass]="{'slide-in':opened, 'slide-out':!opened}">
   <div class="bg-color" *ngIf="opened">
 
     <ul class="main-list">
@@ -71,7 +71,7 @@
         <ul class="sub-list">
           <li class="sub-item" [routerLink]="'/solar-solutions'" (click)="toggleSideNav()">Solar Energy</li>
           <li class="sub-item" [routerLink]="'/ict-solutions'" (click)="toggleSideNav()">ICT</li>
-          <li class="sub-item" (click)="toggleSideNav()">Water Purification</li>
+          <li class="sub-item" [routerLink]="'/water-solutions'" (click)="toggleSideNav()">Water Purification</li>
         </ul>
       </li>
       <li class="item">
