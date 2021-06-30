@@ -47,7 +47,7 @@
         </div>
       </li>
       <li class="nav-item mx-3">
-        <a class="nav-link" data-scroll href="#contact">Contact</a>
+        <a class="nav-link" [routerLink]="'/company/contact'">Contact</a>
       </li>
     </ul>
     <!-- <form class="form-inline my-2 my-lg-0">
@@ -74,7 +74,7 @@
           <li class="sub-item" [routerLink]="'/water-solutions'" (click)="toggleSideNav()">Water Treatment</li>
         </ul>
       </li>
-      <li class="item">
+      <li class="item" [routerLink]="'/company/contact'" (click)="toggleSideNav()">
         Contact
         <ul class="sub-list">
           <li class="sub-item">
