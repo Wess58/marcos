@@ -1,0 +1,95 @@
+.contact-section {
+  padding: 20vh 0 10vh 0;
+
+  .section-title {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    color: #678b13;
+    margin-bottom: 5px;
+    text-align: center;
+    // span {
+    //   // font-size: 2.2rem;
+    //   color: #678b13;
+    //   // border-bottom: 5px solid #678b13;
+    //   padding-bottom: 5px;
+    // }
+  }
+
+  .section-description {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #80868b;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .content {
+    a {
+      color: #678b13;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+
+      i {
+        font-size: 2.2rem;
+        color: #80868b;
+        margin-bottom: 20px;
+        border-radius: 50%;
+      }
+    }
+
+    a:hover {
+      i {
+        color: #678b13;
+      }
+    }
+  }
+
+  .form-bg {
+    // background-color: #678b13;
+    background-image: linear-gradient(135deg , #678b1399 30%, #b5fbc599);
+    border-radius: 20px;
+    margin: 5vh 0;
+  }
+
+  .form {
+    padding: 7vh 0;
+
+    input,
+    select,
+    textarea {
+      border: none;
+      width: 100%;
+      padding: 10px 20px;
+      border-radius: 30px;
+      margin-bottom: 10px;
+      outline: none!important;
+      box-shadow: none!important;
+      color: #80868b;
+    }
+
+    select {
+      background-color: #fff;
+      padding: 10px 20px!important !important;
+      overflow: hidden;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .btn-submit {
+      width: 100%;
+      text-align: center;
+      background-color: #e1e1e1;
+      border-radius: 30px;
+      padding: 10px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #80868b;
+    }
+  }
+}
